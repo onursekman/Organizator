@@ -1,0 +1,12 @@
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\OrganizatorDAL.dll.config
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\OrganizatorDAL.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\OrganizatorDAL.pdb
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\EntityFramework.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\OrganizatorENTİTY.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\OrganizatorENTİTY.pdb
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\EntityFramework.xml
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\obj\Debug\OrganizatorDAL.csprojResolveAssemblyReference.cache
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\obj\Debug\OrganizatorDAL.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\obj\Debug\OrganizatorDAL.pdb

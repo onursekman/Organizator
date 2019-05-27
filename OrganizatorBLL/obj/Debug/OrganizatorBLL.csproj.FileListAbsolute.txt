@@ -1,0 +1,14 @@
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\OrganizatorBLL.dll.config
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\OrganizatorBLL.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\OrganizatorBLL.pdb
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\EntityFramework.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\OrganizatorDAL.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\OrganizatorDAL.pdb
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.pdb
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\EntityFramework.xml
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\obj\Debug\OrganizatorBLL.csprojResolveAssemblyReference.cache
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\obj\Debug\OrganizatorBLL.dll
+C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\obj\Debug\OrganizatorBLL.pdb
