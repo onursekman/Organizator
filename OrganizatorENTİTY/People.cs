@@ -11,10 +11,11 @@ namespace OrganizatorENTİTY
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public People()
         {
+            Comment = new HashSet<Comment>();
             Message = new HashSet<Message>();
             Message1 = new HashSet<Message>();
             Organizasyon = new HashSet<Organizasyon>();
-            Organizasyon1 = new HashSet<Organizasyon>();
+            People_Organizayson = new HashSet<People_Organizayson>();
         }
 
         public int ID { get; set; }
@@ -36,6 +37,9 @@ namespace OrganizatorENTİTY
         public string Password { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Comment> Comment { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Message> Message { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -45,6 +49,6 @@ namespace OrganizatorENTİTY
         public virtual ICollection<Organizasyon> Organizasyon { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Organizasyon> Organizasyon1 { get; set; }
+        public virtual ICollection<People_Organizayson> People_Organizayson { get; set; }
     }
 }

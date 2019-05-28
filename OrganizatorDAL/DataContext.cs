@@ -13,9 +13,11 @@
         }
 
         public virtual DbSet<Categories> Categories { get; set; }
+        public virtual DbSet<Comment> Comment { get; set; }
         public virtual DbSet<Message> Message { get; set; }
         public virtual DbSet<Organizasyon> Organizasyon { get; set; }
         public virtual DbSet<People> People { get; set; }
+        public virtual DbSet<People_Organizayson> People_Organizayson { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -28,14 +30,19 @@
                 .WithRequired(e => e.Categories)
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<Comment>()
+                .HasMany(e => e.Organizasyon)
+                .WithMany(e => e.Comment)
+                .Map(m => m.ToTable("Comment_Organizasyon").MapLeftKey("ComentID").MapRightKey("OrganizasyonID"));
+
             modelBuilder.Entity<Organizasyon>()
-                .Property(e => e.Picture)
+                .Property(e => e.OrganizasyonName)
                 .IsFixedLength();
 
             modelBuilder.Entity<Organizasyon>()
-                .HasMany(e => e.People1)
-                .WithMany(e => e.Organizasyon1)
-                .Map(m => m.ToTable("People-Organizayson").MapLeftKey("OrganizasyonID").MapRightKey("PeopleID"));
+                .HasMany(e => e.People_Organizayson)
+                .WithRequired(e => e.Organizasyon)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<People>()
                 .Property(e => e.Name)
@@ -54,6 +61,11 @@
                 .IsFixedLength();
 
             modelBuilder.Entity<People>()
+                .HasMany(e => e.Comment)
+                .WithRequired(e => e.People)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<People>()
                 .HasMany(e => e.Message)
                 .WithRequired(e => e.People)
                 .HasForeignKey(e => e.ReceiverID)
@@ -68,7 +80,11 @@
             modelBuilder.Entity<People>()
                 .HasMany(e => e.Organizasyon)
                 .WithRequired(e => e.People)
-                .HasForeignKey(e => e.PeopleID)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<People>()
+                .HasMany(e => e.People_Organizayson)
+                .WithRequired(e => e.People)
                 .WillCascadeOnDelete(false);
         }
     }

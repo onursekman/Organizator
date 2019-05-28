@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -125,6 +126,73 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\fontawesome-all.min.css" />
+    <Content Include="Content\css\fontawesome.css" />
+    <Content Include="Content\css\fontawesome.min.css" />
+    <Content Include="Content\css\swiper.css" />
+    <Content Include="Content\css\swiper.min.css" />
+    <Content Include="Content\images\about-us-background.jpg" />
+    <Content Include="Content\images\about-us-content-image.jpg" />
+    <Content Include="Content\images\about-us-header-background.jpg" />
+    <Content Include="Content\images\black-chick.jpg" />
+    <Content Include="Content\images\blog-header-background.jpg" />
+    <Content Include="Content\images\blog-image-1.jpg" />
+    <Content Include="Content\images\blog-image-2.jpg" />
+    <Content Include="Content\images\blog-image-3.jpg" />
+    <Content Include="Content\images\blog-image-4.jpg" />
+    <Content Include="Content\images\blog-image-5.jpg" />
+    <Content Include="Content\images\blog-image-6.jpg" />
+    <Content Include="Content\images\blog-page-background.jpg" />
+    <Content Include="Content\images\box.jpg" />
+    <Content Include="Content\images\button.png" />
+    <Content Include="Content\images\contact-background-image.jpg" />
+    <Content Include="Content\images\contact-header-background.jpg" />
+    <Content Include="Content\images\contact-map.jpg" />
+    <Content Include="Content\images\cover.jpg" />
+    <Content Include="Content\images\elements-header-background.jpg" />
+    <Content Include="Content\images\elements-total-background.jpg" />
+    <Content Include="Content\images\eric-ward.jpg" />
+    <Content Include="Content\images\footer-cover.jpg" />
+    <Content Include="Content\images\image-1.jpg" />
+    <Content Include="Content\images\image-2.jpg" />
+    <Content Include="Content\images\image-3.jpg" />
+    <Content Include="Content\images\image-4.jpg" />
+    <Content Include="Content\images\image-5.jpg" />
+    <Content Include="Content\images\image-6.jpg" />
+    <Content Include="Content\images\image-7.jpg" />
+    <Content Include="Content\images\image-8.jpg" />
+    <Content Include="Content\images\mail.jpg" />
+    <Content Include="Content\images\main-content-background.jpg" />
+    <Content Include="Content\images\mathew-kane.jpg" />
+    <Content Include="Content\images\middle-cover.jpg" />
+    <Content Include="Content\images\news-image-1.jpg" />
+    <Content Include="Content\images\news-image-2.jpg" />
+    <Content Include="Content\images\next-event-1.jpg" />
+    <Content Include="Content\images\next-event-2.jpg" />
+    <Content Include="Content\images\next-event-3.jpg" />
+    <Content Include="Content\images\phone.jpg" />
+    <Content Include="Content\images\place.jpg" />
+    <Content Include="Content\images\slider-image-1.jpg" />
+    <Content Include="Content\images\testimonial-user.jpg" />
+    <Content Include="Content\images\testimonial.jpg" />
+    <Content Include="Content\images\tickets-map.jpg" />
+    <Content Include="Content\images\tickets-page-header-background.jpg" />
+    <Content Include="Content\js\circle-progress.min.js" />
+    <Content Include="Content\js\custom.js" />
+    <Content Include="Content\js\jquery.collapsible.min.js" />
+    <Content Include="Content\js\jquery.countdown.js" />
+    <Content Include="Content\js\jquery.countdown.min.js" />
+    <Content Include="Content\js\jquery.countTo.min.js" />
+    <Content Include="Content\js\jquery.js" />
+    <Content Include="Content\js\masonry.pkgd.min.js" />
+    <Content Include="Content\js\swiper.js" />
+    <Content Include="Content\js\swiper.min.js" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\webfonts\fa-solid-900.svg" />
     <Content Include="Global.asax" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
@@ -133,10 +201,17 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrganizasyonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoriesModel.cs" />
+    <Compile Include="Models\MyOrganizationModel.cs" />
+    <Compile Include="Models\OrganizasyonDetailModell.cs" />
+    <Compile Include="Models\OrganizasyonModell.cs" />
+    <Compile Include="Models\OrganizationRecordModell.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +224,26 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
+    <Content Include="Content\fonts\beyond_the_mountains.otf" />
+    <Content Include="Content\fonts\beyond_the_mountains.ttf" />
+    <Content Include="Content\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\webfonts\fa-solid-900.woff2" />
+    <Content Include="Views\Categories\InsertCategories.cshtml" />
+    <Content Include="Views\Organizasyon\InsertOrganizasyon.cshtml" />
+    <Content Include="Views\Organizasyon\organizationrecord.cshtml" />
+    <Content Include="Views\Organizasyon\OrganizasyonDetail.cshtml" />
+    <Content Include="Views\Contact\Message_.cshtml" />
+    <Content Include="Views\Organizasyon\RegisteredOrganizations.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -158,21 +253,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
-    <Folder Include="Content\fonts\" />
-    <Folder Include="Content\img\" />
-    <Folder Include="Content\js\" />
     <Folder Include="loginContent\css\" />
     <Folder Include="loginContent\fonts\" />
     <Folder Include="loginContent\images\" />
     <Folder Include="loginContent\js\" />
     <Folder Include="loginContent\vendor\" />
-    <Folder Include="Models\" />
     <Folder Include="RegisterContent\css\" />
     <Folder Include="RegisterContent\images\" />
     <Folder Include="RegisterContent\js\" />
     <Folder Include="RegisterContent\vendor\" />
-    <Folder Include="Views\Categories\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OrganizatorBLL\OrganizatorBLL.csproj">

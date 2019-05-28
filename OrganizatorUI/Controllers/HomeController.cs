@@ -1,5 +1,6 @@
 ﻿using OrganizatorBLL;
 using OrganizatorENTİTY;
+using OrganizatorUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace OrganizatorUI.Controllers
         public ActionResult Login(string email,string password)
         {
             People people= LoginBLL.Login(email);
-            if (people.Password == password.Trim())
+            if (people.Password.Trim() == password.Trim())
             {
 
                 Session["People"] = people;
@@ -47,7 +48,9 @@ namespace OrganizatorUI.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+            OrganizasyonModell modell = new OrganizasyonModell();
+            modell.organizasyons = OrganizasyonBLL.organizasyons();
+            return View(modell);
         }
     }
 }

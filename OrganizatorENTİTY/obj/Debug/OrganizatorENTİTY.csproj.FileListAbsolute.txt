@@ -8,3 +8,15 @@ C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorENTİTY\bin\Deb
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.csprojResolveAssemblyReference.cache
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.dll
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.pdb
+C:\WORK\Organizator\OrganizatorENTİTY\bin\Debug\OrganizatorENTİTY.dll.config
+C:\WORK\Organizator\OrganizatorENTİTY\bin\Debug\OrganizatorENTİTY.dll
+C:\WORK\Organizator\OrganizatorENTİTY\bin\Debug\OrganizatorENTİTY.pdb
+C:\WORK\Organizator\OrganizatorENTİTY\bin\Debug\EntityFramework.dll
+C:\WORK\Organizator\OrganizatorENTİTY\bin\Debug\EntityFramework.SqlServer.dll
+C:\WORK\Organizator\OrganizatorENTİTY\bin\Debug\EntityFramework.xml
+C:\WORK\Organizator\OrganizatorENTİTY\bin\Debug\EntityFramework.SqlServer.xml
+C:\WORK\Organizator\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.csprojAssemblyReference.cache
+C:\WORK\Organizator\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.csproj.CoreCompileInputs.cache
+C:\WORK\Organizator\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.csproj.CopyComplete
+C:\WORK\Organizator\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.dll
+C:\WORK\Organizator\OrganizatorENTİTY\obj\Debug\OrganizatorENTİTY.pdb

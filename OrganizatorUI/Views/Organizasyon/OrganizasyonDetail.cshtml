@@ -1,0 +1,91 @@
+﻿@using OrganizatorENTİTY
+@using OrganizatorBLL
+
+@model Organizasyon
+@{
+    ViewBag.Title = "OrganizasyonDetail";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    @*@int toplam = 0;*@
+}
+model.peop_
+<h2>OrganizasyonDetail</h2>
+
+<body class="about-us">
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="entry-header">
+                        <h2 class="entry-title">@Model.OrganizasyonName</h2>
+                        <ul class="breadcrumbs flex align-items-center">
+                            <li><a href="/Home/Index">Home</a></li>
+                            <li>@Model.OrganizasyonName</li>
+                        </ul><!-- .breadcrumbs -->
+                    </div><!-- .entry-header -->
+                </div><!-- .col-12 -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div>
+    <div>
+        <div class="main-content">
+            <div class="container">
+                <div class="entry-header">
+                    <div class="entry-title">
+                        <p>@Model.OrganizasyonName</p>
+                        <h2>@Model.OrganizasyonName</h2>
+                    </div><!-- -->
+                </div><!-- -->
+                <div class="entry-content">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="entry-header">
+                                <h3>ORganizasyon Detay</h3>
+                            </div><!-- -->
+                            <div class="entry-description">
+                                <p>
+                                    Quisque at erat eu libero consequat tempus. Quisque mole stie convallis tempus.
+                                    Ut semper purus metus, a euismod sapien sodales ac. Duis viverra eleifend fermentum.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus vestibulum mauris quis aliquam.
+                                    Integer accumsan sodales odio, id tempus velit ullamcorper id. Quisque at erat eu libero consequat tempus.
+                                    Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac.
+                                    Duis viverra eleifend fermentum. Donec sagittis lacus sit amet augue sodales.
+                                </p>
+
+                            </div><!-- entry-description -->
+                        </div><!-- col-6 -->
+
+                    </div><!-- row -->
+                </div><!-- entry-content -->
+                <figure class="featured-image">
+                    <img src="@Model.Picture" alt="@Model.OrganizasyonName" width="690" height="342">
+                </figure>
+
+            </div><!-- container -->
+        </div>
+        <div class="container">
+            <div class="milestones">
+                <div class="row flex flex-wrap justify-content-between">
+                    <div class="d-col-n mt-5 mt-lg-0">
+                        <div class="counter-box">
+
+                            @*@foreach (var item in Model.People_Organizayson)
+                            {
+                                toplam = +item.Number_of_People;
+
+
+                                <div class="flex justify-content-center">
+                                    <div class="start-counter" data-to="@toplam" data-speed="2000"></div>
+                                </div>
+                            }*@
+                            <h3 class="entry-title">Katılımcı Sayısı</h3><!-- entry-title -->
+                        </div><!-- counter-box -->
+                    </div><!-- d-col-n -->
+                    <!-- d-col-n -->
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>

@@ -51,6 +51,9 @@
   <ItemGroup>
     <Compile Include="CategoriesBLL.cs" />
     <Compile Include="LoginBLL.cs" />
+    <Compile Include="MessageBLL.cs" />
+    <Compile Include="OrganizasyonBLL.cs" />
+    <Compile Include="PeopleBLL.cs" />
     <Compile Include="RegisterBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

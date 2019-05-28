@@ -10,3 +10,18 @@ C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\bin\Debug\E
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\obj\Debug\OrganizatorDAL.csprojResolveAssemblyReference.cache
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\obj\Debug\OrganizatorDAL.dll
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorDAL\obj\Debug\OrganizatorDAL.pdb
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\OrganizatorDAL.dll.config
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\OrganizatorDAL.dll
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\OrganizatorDAL.pdb
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\EntityFramework.dll
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\OrganizatorENTİTY.dll
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\OrganizatorENTİTY.pdb
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\OrganizatorENTİTY.dll.config
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\EntityFramework.xml
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.csprojAssemblyReference.cache
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.csproj.CoreCompileInputs.cache
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.csproj.CopyComplete
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.dll
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.pdb

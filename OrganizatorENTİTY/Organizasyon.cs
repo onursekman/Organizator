@@ -12,10 +12,15 @@ namespace OrganizatorENTİTY
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Organizasyon()
         {
-            People1 = new HashSet<People>();
+            People_Organizayson = new HashSet<People_Organizayson>();
+            Comment = new HashSet<Comment>();
         }
 
         public int ID { get; set; }
+
+        [Required]
+        [StringLength(100)]
+        public string OrganizasyonName { get; set; }
 
         public int CategoriesID { get; set; }
 
@@ -27,7 +32,6 @@ namespace OrganizatorENTİTY
         public int Number_of_Participants { get; set; }
 
         [Required]
-        [StringLength(1000)]
         public string Picture { get; set; }
 
         [Column(TypeName = "date")]
@@ -38,6 +42,9 @@ namespace OrganizatorENTİTY
         public virtual People People { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<People> People1 { get; set; }
+        public virtual ICollection<People_Organizayson> People_Organizayson { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Comment> Comment { get; set; }
     }
 }

@@ -11,6 +11,10 @@ namespace OrganizatorBLL
     {
 
         static DataContext datacontext = new DataContext();
+        public static List<Categories> getCategories()
+        {
+            return datacontext.Categories.ToList();
+        }
 
         public static void insertCategories(Categories cat)
         {

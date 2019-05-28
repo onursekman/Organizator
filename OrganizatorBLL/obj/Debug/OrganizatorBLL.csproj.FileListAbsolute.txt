@@ -12,3 +12,39 @@ C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\bin\Debug\E
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\obj\Debug\OrganizatorBLL.csprojResolveAssemblyReference.cache
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\obj\Debug\OrganizatorBLL.dll
 C:\Users\BilgeAdam\Desktop\Yeni klasör\OrganizatorUI\OrganizatorBLL\obj\Debug\OrganizatorBLL.pdb
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorBLL.dll.config
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorBLL.dll
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorBLL.pdb
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.dll
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorDAL.dll
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.dll
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorDAL.pdb
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorDAL.dll.config
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.pdb
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.dll.config
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.xml
+C:\WORK\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csprojAssemblyReference.cache
+C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csproj.CoreCompileInputs.cache
+C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csproj.CopyComplete
+C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.dll
+C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.pdb
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorBLL.dll.config
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorBLL.dll
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorBLL.pdb
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.dll
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorDAL.dll
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.dll
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorDAL.pdb
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorDAL.dll.config
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.pdb
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.dll.config
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.xml
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csprojAssemblyReference.cache
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csproj.CoreCompileInputs.cache
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csproj.CopyComplete
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.dll
+C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.pdb
