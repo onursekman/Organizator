@@ -81,17 +81,30 @@ namespace OrganizatorUI.Controllers
             return View(organizasyon);
         }
 
-        //public ActionResult RegisteredOrganizations()
-        //{
-        //    //People people = Session["People"] as People;
-        //    //List<MyOrganizationModel> model = OrganizasyonBLL.organiz_linq(people.ID) as MyOrganizationModel;
-          
+        public ActionResult RegisteredOrganizations()
+        {
+            People people = Session["People"] as People;
+            List<People_Organizayson> organizasyons = OrganizasyonBLL.organiz_linq(people.ID);
 
+            return View(organizasyons);
+            
+        }
 
-        //    //return View(people_Organizayson);
-        //}
+        public ActionResult ExitOrganization()
+        {
 
-       
+            return View();
+        }
+        [HttpPost]
+        public ActionResult ExitOrganization(int id)
+        {
+
+        Organizasyon org=OrganizasyonBLL.GetOrganizasyon_linq(id);
+            OrganizasyonBLL.removeOrganizasyon(org);
+
+            return RedirectToAction("RegisteredOrganizations");
+        }
+
 
     }
 }

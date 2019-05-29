@@ -91,11 +91,8 @@ C:\WORK\Organizator\OrganizatorUI\bin\System.Web.Webpages.Deployment.dll
 C:\WORK\Organizator\OrganizatorUI\bin\System.Web.Webpages.dll
 C:\WORK\Organizator\OrganizatorUI\bin\System.Web.Webpages.Razor.dll
 C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorBLL.pdb
-C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorBLL.dll.config
 C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorDAL.pdb
-C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorDAL.dll.config
 C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorENTİTY.pdb
-C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorENTİTY.dll.config
 C:\WORK\Organizator\OrganizatorUI\bin\EntityFramework.xml
 C:\WORK\Organizator\OrganizatorUI\bin\EntityFramework.SqlServer.xml
 C:\WORK\Organizator\OrganizatorUI\bin\Microsoft.AI.DependencyCollector.xml
@@ -110,9 +107,6 @@ C:\WORK\Organizator\OrganizatorUI\bin\System.Web.Webpages.Deployment.xml
 C:\WORK\Organizator\OrganizatorUI\bin\System.Web.Webpages.Razor.xml
 C:\WORK\Organizator\OrganizatorUI\bin\System.Web.Helpers.xml
 C:\WORK\Organizator\OrganizatorUI\bin\System.Web.Mvc.xml
-C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csprojAssemblyReference.cache
-C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csproj.CoreCompileInputs.cache
-C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csproj.CopyComplete
 C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.dll
 C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.pdb
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\bin\ApplicationInsights.config
@@ -176,3 +170,4 @@ C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Deb
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csproj.CopyComplete
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.dll
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.pdb
+C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csprojResolveAssemblyReference.cache

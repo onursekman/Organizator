@@ -6,38 +6,46 @@
 }
 
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
 
-@using (Html.BeginForm("organizationrecord", "Organizasyon", FormMethod.Post))
-{
+<body class="tickets-page">
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="entry-header">
+                        <h2 class="entry-title">Elements</h2>
+                        <ul class="breadcrumbs flex align-items-center">
+                            <li><a href="/Home/Index">Home</a></li>
+                            <li>KAYITLI ORGANİZASYONLAR</li>
+                        </ul><!-- .breadcrumbs -->
+                    </div><!-- entry-header -->
+                </div><!-- col-12 -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- page-header -->
+    <br />
+    <br />
+    <br />
+    @using (Html.BeginForm("organizationrecord", "Organizasyon", FormMethod.Post))
+    {
+        <div class="ticket-row flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
 
-<div class="ticket-row flex flex-column flex-lg-row justify-content-lg-between align-items-lg-center">
-    <div class="ticket-type flex flex-column flex-lg-row align-items-lg-center">
-        <h3 class="entry-title">Vip Ticket + Camping</h3>
-        <span class="mt-2 mt-lg-0"> Vip Entry</span>
-        <div class="ticket-price mt-3 mt-lg-0">
-            $319
-        </div><!-- ticket-price -->
-    </div><!-- ticket-type -->
-
-    <div class="flex align-items-center">
-        <div class="number-of-tickets flex justify-content-between align-items-center">
-            <input type="number" name="kisi" value="1">
-            @*<span class="decrease-ticket">-</span>
-        <input type="number" name="kisi" value="1" class="ticket-count">
-        <span class="increase-ticket">+</span>*@
-        </div><!-- number-of-tickets -->
-
-        <div class="clear-ticket-count">Clear</div>
-    </div><!-- flex -->
-
-    <input type="submit" name="" value="Buy" class="btn"><!-- btn -->
-</div>
-}
+            <div class="ticket-type flex flex-column flex-lg-row align-items-lg-center">
+               
+                <div class="ticket-price mt-3 mt-lg-0">
+             
+                </div><!-- ticket-price -->
+            </div><!-- ticket-type -->
+            <div class="flex align-items-center">
+                <div class="number-of-tickets flex justify-content-between align-items-center">
+                    <input type="number" name="kisi" value="1">
+                    @*<span class="decrease-ticket">-</span>
+                        <input type="number" name="kisi" value="1" class="ticket-count">
+                        <span class="increase-ticket">+</span>*@
+                </div><!-- number-of-tickets -->
+                <div class="clear-ticket-count">Clear</div>
+            </div><!-- flex -->
+            <input type="submit" name="" value="Buy" class="btn"><!-- btn -->
+    </div>}
+    
+</body>

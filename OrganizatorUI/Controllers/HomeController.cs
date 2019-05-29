@@ -42,6 +42,7 @@ namespace OrganizatorUI.Controllers
             p.Surname = people.Surname;
             p.Email = people.Email;
             p.Password = people.Password;
+            p.Profile_Picture = "http://c12.incisozluk.com.tr/res/incisozluk//11509/8/2613948_ob5cd.jpg";
             RegisterBLL.Register(p);
 
             return RedirectToAction("Login");

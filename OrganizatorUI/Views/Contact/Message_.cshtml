@@ -1,4 +1,6 @@
-﻿@using OrganizatorENTİTY
+﻿@using OrganizatorUI.Models
+@using OrganizatorENTİTY
+@model ContactModell
 @{
     People people=Session["People"] as People;
     ViewBag.Title = "Message_";
@@ -64,8 +66,10 @@
                         <div class="row">
 
                             <div class="col-12 col-md-6">
-                                <input type="email" placeholder="email" name="email">
-                            </div><!-- col-6 -->
+                                @Html.DropDownListFor(m =>m.Email, ViewBag.Email as List<SelectListItem>, "Lütfen Seçiniz", new { @class = "dropdown form-control" })
+                                @*<input type="email" placeholder="email" name="email">*@
+                            </div>
+
                             <div class="col-12">
 
                             </div>

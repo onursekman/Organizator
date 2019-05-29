@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CategoriesBLL.cs" />
+    <Compile Include="CommentBLL.cs" />
     <Compile Include="LoginBLL.cs" />
     <Compile Include="MessageBLL.cs" />
     <Compile Include="OrganizasyonBLL.cs" />

@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Categories.cs" />
     <Compile Include="Comment.cs" />
+    <Compile Include="Comment_Organizasyon.cs" />
     <Compile Include="Message.cs" />
     <Compile Include="Organizasyon.cs" />
     <Compile Include="People.cs" />

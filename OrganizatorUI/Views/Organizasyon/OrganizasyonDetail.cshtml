@@ -5,7 +5,7 @@
 @{
     ViewBag.Title = "OrganizasyonDetail";
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
-    @*@int toplam = 0;*@
+    int toplam = 0;
 }
 model.peop_
 <h2>OrganizasyonDetail</h2>
@@ -50,42 +50,39 @@ model.peop_
                                     Quisque molestie convallis tempus. Ut semper purus metus, a euismod sapien sodales ac.
                                     Duis viverra eleifend fermentum. Donec sagittis lacus sit amet augue sodales.
                                 </p>
-
                             </div><!-- entry-description -->
                         </div><!-- col-6 -->
-
                     </div><!-- row -->
                 </div><!-- entry-content -->
                 <figure class="featured-image">
                     <img src="@Model.Picture" alt="@Model.OrganizasyonName" width="690" height="342">
                 </figure>
-
             </div><!-- container -->
         </div>
+        @*@Html.Partial("~/Views/Comment/_Comment.cshtml")*@
         <div class="container">
             <div class="milestones">
                 <div class="row flex flex-wrap justify-content-between">
                     <div class="d-col-n mt-5 mt-lg-0">
                         <div class="counter-box">
-
-                            @*@foreach (var item in Model.People_Organizayson)
+                            
+                            @foreach (var item in Model.People_Organizayson)
                             {
-                                toplam = +item.Number_of_People;
+                                toplam += item.Number_of_People;
+                            }
 
 
                                 <div class="flex justify-content-center">
                                     <div class="start-counter" data-to="@toplam" data-speed="2000"></div>
                                 </div>
-                            }*@
                             <h3 class="entry-title">Katılımcı Sayısı</h3><!-- entry-title -->
+
                         </div><!-- counter-box -->
                     </div><!-- d-col-n -->
                     <!-- d-col-n -->
                 </div>
             </div>
         </div>
-
-
 
     </div>
 </body>

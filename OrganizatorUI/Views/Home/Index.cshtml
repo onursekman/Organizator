@@ -113,6 +113,7 @@
                         <div class="swiper-wrapper">
                             @foreach (Organizasyon item in organizasyons)
                             {
+                                <
                                 <div class="swiper-slide">
                                     <div class="next-event-content">
 
@@ -120,10 +121,14 @@
                                             <img src="@item.Picture" alt="">
 
                                             <a href="/Organizasyon/OrganizasyonDetail/@item.ID" class="entry-content flex flex-column justify-content-center align-items-center">
-                                                <h3>@item.OrganizasyonName</h3>
+                                                <h3>@item.OrganizasyonName </h3>
                                                 <p></p>
                                             </a>
                                         </figure><!-- featured-image -->
+                                        <div class="entry-footer">
+                                            <a href="/Organizasyon/organizationrecord/@org.ID" class="btn">Organizasyon'a Kaydol</a>
+                                           
+                                        </div>
                                     </div>
                                     }<!-- next-event-content -->
                                 </div>}

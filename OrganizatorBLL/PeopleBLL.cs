@@ -17,7 +17,15 @@ namespace OrganizatorBLL
         {
             return datacontext.People.Where(x => x.Email == email.Trim()).FirstOrDefault();
         }
+        public static People GetPeople1(int id)
+        {
+            return datacontext.People.Where(x => x.ID == id).FirstOrDefault();
+        }
 
+        public static List<People> listPeople()
+        {
+            return datacontext.People.ToList();
+        }
 
 
     }

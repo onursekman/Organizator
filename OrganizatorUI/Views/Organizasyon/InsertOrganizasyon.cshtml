@@ -8,26 +8,53 @@
 <h2>InsertOrganizasyon</h2>
 
 <body class="contact-page">
+    <header class="site-header">
+        <div class="header-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-10 col-lg-4">
+                        <h1 class="site-branding flex">
+                            <a href="#">SUNFEST</a>
+                        </h1>
+                    </div>
+                    <div class="col-2 col-lg-8">
+                        <nav class="site-navigation">
+                            <div class="hamburger-menu d-lg-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div><!-- .hamburger-menu -->
+                            <ul>
+                                <li><a href="/Home/Index">HOME</a></li>
+                                <li><a href="/Organizasyon/InsertOrganizasyon">Organizasyon Ekle</a></li>
+                                <li><a href="/Categories/InsertCategories">KATEGORİ EKLE</a></li>
+                                <li><a href="/Organizasyon/RegisteredOrganizations">Organizasyonlarım</a></li>
+                                <li><a href="/Contact/Message_">CONTACT</a></li>
+                                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                            </ul><!-- flex -->
+                        </nav><!-- .site-navigation -->
+                    </div><!-- .col-12 -->
+                </div><!-- .row -->
+            </div><!-- container-fluid -->
+        </div><!-- header-bar -->
+    </header>
     <div class="get-in-touch">
         <div class="entry-header">
             <div class="entry-title">
-
                 <h2>Organizasyon Düzenle</h2>
             </div><!-- entry-title -->
         </div><!-- entry-header -->
         <div class="entry-content">
-
         </div><!-- entry-content -->
         <form action="/Organizasyon/InsertOrganizasyon" method="post">
             <div class="contact-form">
 
 
-
-
                 <label class="control-label col-md-2">Country :</label>
                 <div class="col-md-5">
-            @Html.DropDownListFor(m => m.ID, ViewBag.Category as List<SelectListItem>, "Lütfen Seçiniz", new { @class = "dropdown form-control" })
-        </div>
+                    @Html.DropDownListFor(m => m.ID, ViewBag.Category as List<SelectListItem>, "Lütfen Seçiniz", new { @class = "dropdown form-control" })
+                </div>
                 <div class="col-12 col-md-6">
                     <input type="text" placeholder="Organizasyon İsmi" name="OrganizasyonName">
                 </div><!-- col-6 -->
@@ -40,16 +67,13 @@
                 <div class="col-12 col-md-6">
                     <input type="text" placeholder="KATEGORİ RESMİ" name="Picture">
                 </div>
-
                 <div class="col-12 submit flex justify-content-center">
                     <input type="submit" value="submit" class="btn">
                 </div>
 
 
-
-
-
             </div>
         </form>
+    </div>
 </body>
 

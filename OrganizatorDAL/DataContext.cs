@@ -14,6 +14,7 @@
 
         public virtual DbSet<Categories> Categories { get; set; }
         public virtual DbSet<Comment> Comment { get; set; }
+        public virtual DbSet<Comment_Organizasyon> Comment_Organizasyon { get; set; }
         public virtual DbSet<Message> Message { get; set; }
         public virtual DbSet<Organizasyon> Organizasyon { get; set; }
         public virtual DbSet<People> People { get; set; }
@@ -31,13 +32,19 @@
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Comment>()
-                .HasMany(e => e.Organizasyon)
-                .WithMany(e => e.Comment)
-                .Map(m => m.ToTable("Comment_Organizasyon").MapLeftKey("ComentID").MapRightKey("OrganizasyonID"));
+                .HasMany(e => e.Comment_Organizasyon)
+                .WithRequired(e => e.Comment)
+                .HasForeignKey(e => e.ComentID)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Organizasyon>()
                 .Property(e => e.OrganizasyonName)
                 .IsFixedLength();
+
+            modelBuilder.Entity<Organizasyon>()
+                .HasMany(e => e.Comment_Organizasyon)
+                .WithRequired(e => e.Organizasyon)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Organizasyon>()
                 .HasMany(e => e.People_Organizayson)

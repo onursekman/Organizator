@@ -39,8 +39,15 @@ namespace OrganizatorBLL
 
         public static List<People_Organizayson> organiz_linq(int id)
         {
-            return datacontext.People_Organizayson.Where(x => x.OrganizasyonID == id).ToList();
+            return datacontext.People_Organizayson.Where(x => x.PeopleID == id).ToList();
         }
 
+        public static void removeOrganizasyon(Organizasyon org)
+        {
+            datacontext.Organizasyon.Remove(org);
+            datacontext.SaveChanges();
+        }
+
+        
     }
 }

@@ -201,6 +201,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrganizasyonController.cs" />
@@ -208,6 +209,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CategoriesModel.cs" />
+    <Compile Include="Models\CommentModell.cs" />
+    <Compile Include="Models\ContactModell.cs" />
     <Compile Include="Models\MyOrganizationModel.cs" />
     <Compile Include="Models\OrganizasyonDetailModell.cs" />
     <Compile Include="Models\OrganizasyonModell.cs" />
@@ -244,6 +247,7 @@
     <Content Include="Views\Organizasyon\OrganizasyonDetail.cshtml" />
     <Content Include="Views\Contact\Message_.cshtml" />
     <Content Include="Views\Organizasyon\RegisteredOrganizations.cshtml" />
+    <Content Include="Views\Comment\_Comment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -258,6 +262,7 @@
     <Folder Include="loginContent\images\" />
     <Folder Include="loginContent\js\" />
     <Folder Include="loginContent\vendor\" />
+    <Folder Include="PartialViews\" />
     <Folder Include="RegisterContent\css\" />
     <Folder Include="RegisterContent\images\" />
     <Folder Include="RegisterContent\js\" />

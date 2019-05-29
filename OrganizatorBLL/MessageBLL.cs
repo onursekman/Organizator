@@ -12,6 +12,8 @@ namespace OrganizatorBLL
 
         static DataContext datacontext = new DataContext();
 
+
+
         public static void SenderMessage(Message msj)
         {
             datacontext.Message.Add(msj);

@@ -35,7 +35,7 @@ namespace OrganizatorENTİTY
         [Required]
         [StringLength(100)]
         public string Password { get; set; }
-
+        public string Profile_Picture { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comment { get; set; }
 
