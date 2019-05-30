@@ -21,4 +21,7 @@ C:\WORK\Organizator\OrganizatorDAL\bin\Debug\EntityFramework.xml
 C:\WORK\Organizator\OrganizatorDAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.dll
 C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.pdb
-C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.csprojResolveAssemblyReference.cache
+C:\WORK\Organizator\OrganizatorDAL\bin\Debug\OrganizatorENTİTY.dll.config
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.csprojAssemblyReference.cache
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.csproj.CoreCompileInputs.cache
+C:\WORK\Organizator\OrganizatorDAL\obj\Debug\OrganizatorDAL.csproj.CopyComplete

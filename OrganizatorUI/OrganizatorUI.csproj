@@ -211,6 +211,7 @@
     <Compile Include="Models\CategoriesModel.cs" />
     <Compile Include="Models\CommentModell.cs" />
     <Compile Include="Models\ContactModell.cs" />
+    <Compile Include="Models\MessageModell.cs" />
     <Compile Include="Models\MyOrganizationModel.cs" />
     <Compile Include="Models\OrganizasyonDetailModell.cs" />
     <Compile Include="Models\OrganizasyonModell.cs" />
@@ -250,6 +251,8 @@
     <Content Include="Views\Organizasyon\RegisteredOrganizations.cshtml" />
     <Content Include="Views\Comment\_Comment.cshtml" />
     <Content Include="Views\PartialViews\_Profile.cshtml" />
+    <Content Include="Views\Comment\ListMessaj.cshtml" />
+    <Content Include="Views\Contact\ReplyMessage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

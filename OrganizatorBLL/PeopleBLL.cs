@@ -26,7 +26,7 @@ namespace OrganizatorBLL
         {
             return datacontext.People.ToList();
         }
-
+        
 
     }
 }

@@ -35,5 +35,12 @@ namespace OrganizatorUI.Controllers
 
             return RedirectToAction("Index","Home");
         }
+        public ActionResult ListMessaj()
+        {
+
+
+            return View();
+        }
+      
     }
 }

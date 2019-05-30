@@ -170,4 +170,9 @@ C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Deb
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csproj.CopyComplete
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.dll
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.pdb
-C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csprojResolveAssemblyReference.cache
+C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorBLL.dll.config
+C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorDAL.dll.config
+C:\WORK\Organizator\OrganizatorUI\bin\OrganizatorENTİTY.dll.config
+C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csprojAssemblyReference.cache
+C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csproj.CoreCompileInputs.cache
+C:\WORK\Organizator\OrganizatorUI\obj\Debug\OrganizatorUI.csproj.CopyComplete

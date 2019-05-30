@@ -1,0 +1,68 @@
+﻿
+@using OrganizatorENTİTY
+@using OrganizatorBLL
+@{
+    ViewBag.Title = "ListMessaj";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    People people = Session["People"] as People;
+    List<Message> msj = MessageBLL.gelenMessage(people.ID);
+}
+
+
+
+<body class="contact-page">
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="entry-header">
+                        <h2 class="entry-title">Elements</h2>
+                        <ul class="breadcrumbs flex align-items-center">
+                            <li><a href="/Home/Index">Home</a></li>
+                            <li>MESAJLARIM</li>
+                        </ul><!-- .breadcrumbs -->
+                    </div><!-- entry-header -->
+                </div><!-- col-12 -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="lineup-artists-headline">
+
+                <div class="lineup-artists">
+                    @foreach (var item in msj)
+                    {
+
+                    <form action="/Contact/ReplyMessage/@item.SenderID" method="get">
+                        <div class="lineup-artists-wrap flex flex-wrap">
+                            <figure class="featured-image">
+                                <a href="#"> <img src="@people.Profile_Picture" alt=""> </a>
+                            </figure><!-- featured-image -->
+                            <div class="lineup-artists-description">
+                                <div class="lineup-artists-description-container">
+                                    <div class="entry-title">
+                                        @item.People.Name
+                                    </div><!-- entry-title -->
+                                    <div class="entry-content">
+                                        <p>@item.Message_Detail</p>
+                                        <input type="submit" value="Messaj Cevapla" class="btn btn-success">
+                                    </div><!-- entry-content -->
+                                    <div class="box-link">
+                                        <a href=""><img src="images/box.jpg" alt=""></a>
+                                    </div><!-- box-link -->
+                                </div><!-- lineup-artists-description-container -->
+                            </div><!-- lineup-artists-description -->
+                        </div><!-- lineup-artists-wrap -->
+                        
+                    </form>
+                        
+                    }
+
+
+                </div><!-- lineup-artists -->
+            </div><!-- lineup-artists-headline -->
+        </div><!-- col-12 -->
+    </div><!-- row -->
+    <br />
+    </body>

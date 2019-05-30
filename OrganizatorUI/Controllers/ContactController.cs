@@ -1,5 +1,6 @@
 ﻿using OrganizatorBLL;
 using OrganizatorENTİTY;
+using OrganizatorUI.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,6 +45,26 @@ namespace OrganizatorUI.Controllers
 
             }
             return RedirectToAction("Index","Home");
+        }
+        public ActionResult ReplyMessage(int id)
+        {
+            People po = PeopleBLL.GetPeople1(id);
+            ViewBag.PoEmail = po.Email;
+           Session["PoEmail"] = po;
+            return View();
+        }
+        [HttpPost]
+        public ActionResult ReplyMessage(MessageModell model)
+        {
+            People gonderen = Session["People"] as People;
+            People email = Session["PoEmail"] as People;
+            People alıcı = PeopleBLL.GetPeople(email.Email);
+            Message msj = new Message();
+            msj.ReceiverID = gonderen.ID;
+            msj.SenderID = alıcı.ID;
+            msj.Message_Detail = model.Message_Detail;
+            MessageBLL.SenderMessage(msj);
+            return RedirectToAction("INdex", "Home");
         }
 
 
