@@ -19,6 +19,10 @@ namespace OrganizatorBLL
             datacontext.Message.Add(msj);
             datacontext.SaveChanges();
         }
+        public static List<Message> gelenMessage(int id)
+        {
+            return datacontext.Message.Where(x => x.ReceiverID == id).ToList();
+        }
 
 
 

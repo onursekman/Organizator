@@ -10,5 +10,6 @@ namespace OrganizatorUI.Models
     {
 
         public List<Organizasyon> organizasyons { get; set; }
+       
     }
 }

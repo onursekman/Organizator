@@ -6,11 +6,11 @@
     List<Categories> cat = CategoriesBLL.getCategories();
     Organizasyon org = OrganizasyonBLL.GetOrganizasyon();
     List<Organizasyon> organizasyons = OrganizasyonBLL.organizasyons();
-
+   
+    int toplam = 0;
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
 }
-
 <body>
     <div class="hero-content">
         <div class="container">
@@ -58,7 +58,6 @@
     </div><!-- .hero-content -->
     <div class="content-section">
         <div class="container">
-
             <div class="row">
                 <div class="col-12">
                     <div class="the-complete-lineup">
@@ -71,18 +70,13 @@
                             {
                                 <div class="col-6 col-md-4 col-lg-3 artist-single">
                                     <figure class="featured-image">
-
                                         <a href="#">
                                             <img src="@item.Picture" alt="">
-
                                         </a>
                                         <a href="#" class="box-link">
                                             <img src="~/Content/images/box.jpg" alt="">
-
                                         </a>
-
                                         <h2>@item.CategoriesName</h2>
-
                                     </figure>
                                 </div>
 
@@ -106,43 +100,54 @@
                             </div><!-- entry-title -->
                         </div><!-- col-12 -->
                     </div><!-- row -->
-                </div><!-- container -->
+                </div>
+              <!-- container -->
                 <div class="next-event-slider-wrap">
                     <div class="swiper-container next-event-slider">
-
                         <div class="swiper-wrapper">
                             @foreach (Organizasyon item in organizasyons)
                             {
-                                <
-                                <div class="swiper-slide">
-                                    <div class="next-event-content">
+                                People_Organizayson po = OrganizasyonBLL.getPeople_org(item.ID);
 
-                                        <figure class="featured-image">
-                                            <img src="@item.Picture" alt="">
+                               
 
-                                            <a href="/Organizasyon/OrganizasyonDetail/@item.ID" class="entry-content flex flex-column justify-content-center align-items-center">
-                                                <h3>@item.OrganizasyonName </h3>
-                                                <p></p>
-                                            </a>
-                                        </figure><!-- featured-image -->
-                                        <div class="entry-footer">
-                                            <a href="/Organizasyon/organizationrecord/@org.ID" class="btn">Organizasyon'a Kaydol</a>
+                                    <div class="swiper-slide">
+                                        <div class="next-event-content">
+                                            <figure class="featured-image">
+                                                <img src="@item.Picture" alt="">
+                                                <a href="/Organizasyon/OrganizasyonDetail/@item.ID" class="entry-content flex flex-column justify-content-center align-items-center">
+                                                    <h3>@item.OrganizasyonName </h3>
+
+                                                </a>
+                                            </figure><!-- featured-image -->
                                            
-                                        </div>
-                                    </div>
-                                    }<!-- next-event-content -->
-                                </div>}
-                        </div>
+                                           
+                                            @if (toplam != org.Number_of_Participants)
+                                            {
 
+
+                                                <div class="entry-footer">
+                                                    <a href="/Organizasyon/organizationrecord/@org.ID" class="btn">Organizasyon'a Kaydol</a>
+
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <span style="float:right; color:red; font-size:large"><b>DOLU</b></span>
+                                            }
+
+                                        </div>
+                                        }<!-- next-event-content -->
+                                    </div>}
+                        </div>
                         <!-- .swiper-wrapper -->
                     </div><!-- .swiper-container -->
                     <div class="swiper-button-next">
                         <img src="
-~/Content/images/button.png" alt="">
+                             ~/Content/images/button.png" alt="">
                     </div><!-- .slider-button -->
                 </div><!-- .next-event-slider-wrap -->
             </div><!-- homepage-next-events -->
-
         </div>
     </div>
 </body>

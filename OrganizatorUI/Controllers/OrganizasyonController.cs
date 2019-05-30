@@ -14,7 +14,9 @@ namespace OrganizatorUI.Controllers
         // GET: Organizasyon
         public ActionResult Index()
         {
-            
+
+
+
             return View();
         }
 
@@ -32,7 +34,7 @@ namespace OrganizatorUI.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult InsertOrganizasyon(Organizasyon organizasyon,CategoriesModel model)
+        public ActionResult InsertOrganizasyon(Organizasyon organizasyon, CategoriesModel model)
         {
             People people = Session["People"] as People;
 
@@ -52,7 +54,7 @@ namespace OrganizatorUI.Controllers
 
         public ActionResult organizationrecord()
         {
-            
+
             return View();
         }
         [HttpPost]
@@ -60,23 +62,25 @@ namespace OrganizatorUI.Controllers
         {
             People_Organizayson po = new People_Organizayson();
 
-            People people = Session["People"] as People;
-            po.OrganizasyonID = model.id;
-            po.PeopleID = people.ID;
-            po.Number_of_People = model.kisi;
-            OrganizasyonBLL.Insert_People_Organizasyon(po);
 
-            return RedirectToAction("Index","Home");
+            People people = Session["People"] as People;
+            Organizasyon org = OrganizasyonBLL.GetOrganizasyon_linq(people.ID);
+
+                po.OrganizasyonID = model.id;
+                po.PeopleID = people.ID;
+                po.Number_of_People = model.kisi;
+                OrganizasyonBLL.Insert_People_Organizasyon(po);
+           
+
+            return RedirectToAction("Index", "Home");
         }
 
- 
+
         public ActionResult OrganizasyonDetail(int id)
         {
-            //OrganizasyonDetailModell modell = new OrganizasyonDetailModell();
-           Organizasyon organizasyon= OrganizasyonBLL.GetOrganizasyon_linq(id);
-            //modell.OrganizasyonName = organizasyon.OrganizasyonName;
-            //modell.Picture = organizasyon.Picture;
-            //modell.Application_date = organizasyon.Application_date;
+
+            Organizasyon organizasyon = OrganizasyonBLL.GetOrganizasyon_linq(id);
+
 
             return View(organizasyon);
         }
@@ -87,7 +91,7 @@ namespace OrganizatorUI.Controllers
             List<People_Organizayson> organizasyons = OrganizasyonBLL.organiz_linq(people.ID);
 
             return View(organizasyons);
-            
+
         }
 
         public ActionResult ExitOrganization()
@@ -99,12 +103,23 @@ namespace OrganizatorUI.Controllers
         public ActionResult ExitOrganization(int id)
         {
 
-        Organizasyon org=OrganizasyonBLL.GetOrganizasyon_linq(id);
+            Organizasyon org = OrganizasyonBLL.GetOrganizasyon_linq(id);
             OrganizasyonBLL.removeOrganizasyon(org);
 
             return RedirectToAction("RegisteredOrganizations");
         }
 
+        //public ActionResult QuotaOrganization()
+
+        //{
+        //    return View();
+        //}
+        //[HttpPost]
+        //public ActionResult QuotaOrganization()
+
+        //{
+        //    return View();
+        //}
 
     }
 }

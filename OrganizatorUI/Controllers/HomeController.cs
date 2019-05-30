@@ -25,10 +25,11 @@ namespace OrganizatorUI.Controllers
             {
 
                 Session["People"] = people;
+                return RedirectToAction("Index");
             }
 
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Login");
         }
         public ActionResult Register()
         {

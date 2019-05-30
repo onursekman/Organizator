@@ -45,11 +45,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -215,6 +215,7 @@
     <Compile Include="Models\OrganizasyonDetailModell.cs" />
     <Compile Include="Models\OrganizasyonModell.cs" />
     <Compile Include="Models\OrganizationRecordModell.cs" />
+    <Compile Include="Models\ProfileModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -248,6 +249,7 @@
     <Content Include="Views\Contact\Message_.cshtml" />
     <Content Include="Views\Organizasyon\RegisteredOrganizations.cshtml" />
     <Content Include="Views\Comment\_Comment.cshtml" />
+    <Content Include="Views\PartialViews\_Profile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -256,13 +258,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="AdminContent\build\" />
+    <Folder Include="AdminContent\dist\" />
+    <Folder Include="AdminContent\documentation\" />
+    <Folder Include="AdminContent\pages\" />
+    <Folder Include="AdminContent\plugins\" />
     <Folder Include="App_Data\" />
     <Folder Include="loginContent\css\" />
     <Folder Include="loginContent\fonts\" />
     <Folder Include="loginContent\images\" />
     <Folder Include="loginContent\js\" />
     <Folder Include="loginContent\vendor\" />
-    <Folder Include="PartialViews\" />
     <Folder Include="RegisterContent\css\" />
     <Folder Include="RegisterContent\images\" />
     <Folder Include="RegisterContent\js\" />

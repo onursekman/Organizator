@@ -48,6 +48,11 @@ namespace OrganizatorBLL
             datacontext.SaveChanges();
         }
 
+        public static People_Organizayson getPeople_org(int id)
+        {
+            return datacontext.People_Organizayson.Where(x => x.OrganizasyonID == id).FirstOrDefault();
+        }
+
         
     }
 }
