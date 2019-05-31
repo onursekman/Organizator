@@ -16,22 +16,22 @@ namespace OrganizatorUI.Controllers
             return View();
         }
 
-        public ActionResult Comment_()
-        {
-            return View();
-        }
+        //public ActionResult Comment_()
+        //{
+        //    return View();
+        //}
         [HttpPost]
-        public ActionResult Comment_(int id,string detail)
-        { People people = Session["People"] as People;
-            Comment co = new Comment();
-            co.Comment_detail = detail;
-            co.PeopleID = people.ID;
-            int CommentId = CommentBLL.CommentId();
-            Comment_Organizasyon org = new Comment_Organizasyon();
-            org.OrganizasyonID = id;
-            org.ComentID = CommentId;
-            CommentBLL.InsertComment(co);
-            CommentBLL.InsertComment_Organizasyon(org);
+        public ActionResult Comment_(string Email,string Detail,int id)
+        {
+            People people = PeopleBLL.GetPeople(Email);
+            Comment cmd = new Comment();
+            cmd.PeopleID = people.ID;
+            cmd.Comment_detail = Detail;
+            Comment_Organizasyon co = new Comment_Organizasyon();
+            co.OrganizasyonID = id;
+            int commentID = CommentBLL.InsertComment(cmd);
+            co.ComentID = commentID;
+            CommentBLL.InsertComment_Organizasyon(co);
 
             return RedirectToAction("Index","Home");
         }

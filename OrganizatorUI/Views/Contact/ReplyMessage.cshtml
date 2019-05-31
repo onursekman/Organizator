@@ -63,9 +63,9 @@
                         <div class="row">
 
                             <div class="col-12 col-md-6">
-                                @*@Html.DropDownListFor(m =>m.Email, ViewBag.Email as List<SelectListItem>, "Lütfen Seçiniz", new { @class = "dropdown form-control" })*@
-                                @*<input type="email" placeholder="email" name="Email">*@
-                                <text><h2>@ViewBag.PoEmail</h2></text>
+                               
+                                <text><h2 style="color:black">@Model.Email</h2></text>
+                                @Html.HiddenFor(x=>x.Email)
                             </div>
 
                             <div class="col-12">

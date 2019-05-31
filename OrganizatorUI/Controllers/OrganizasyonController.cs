@@ -109,17 +109,7 @@ namespace OrganizatorUI.Controllers
             return RedirectToAction("RegisteredOrganizations");
         }
 
-        //public ActionResult QuotaOrganization()
-
-        //{
-        //    return View();
-        //}
-        //[HttpPost]
-        //public ActionResult QuotaOrganization()
-
-        //{
-        //    return View();
-        //}
+        
 
     }
 }

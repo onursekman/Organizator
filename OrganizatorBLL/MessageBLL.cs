@@ -1,4 +1,5 @@
-﻿using OrganizatorENTİTY;
+﻿using OrganizatorDAL;
+using OrganizatorENTİTY;
 using System;
 using System.Collections.Generic;
 using System.Linq;

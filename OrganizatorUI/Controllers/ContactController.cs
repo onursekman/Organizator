@@ -30,11 +30,11 @@ namespace OrganizatorUI.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Message_(string email,string detail)
+        public ActionResult Message_(string email, string detail)
         {
             People gonderen = Session["People"] as People;
             People people = PeopleBLL.GetPeople(email);
-            if (people.Email.Trim()== email.Trim())
+            if (people.Email == email)
             {
                 Message msj = new Message();
                 msj.SenderID = gonderen.ID;
@@ -44,21 +44,20 @@ namespace OrganizatorUI.Controllers
 
 
             }
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
         public ActionResult ReplyMessage(int id)
         {
             People po = PeopleBLL.GetPeople1(id);
-            ViewBag.PoEmail = po.Email;
-           Session["PoEmail"] = po;
-            return View();
+            MessageModell mesaj = new MessageModell();
+            mesaj.Email = po.Email;
+            return View(mesaj);
         }
         [HttpPost]
         public ActionResult ReplyMessage(MessageModell model)
         {
             People gonderen = Session["People"] as People;
-            People email = Session["PoEmail"] as People;
-            People alıcı = PeopleBLL.GetPeople(email.Email);
+            People alıcı = PeopleBLL.GetPeople(model.Email);
             Message msj = new Message();
             msj.ReceiverID = gonderen.ID;
             msj.SenderID = alıcı.ID;

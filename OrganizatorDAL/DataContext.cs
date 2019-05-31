@@ -1,9 +1,10 @@
-﻿namespace OrganizatorENTİTY
+﻿namespace OrganizatorDAL
 {
     using System;
     using System.Data.Entity;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
+    using OrganizatorENTİTY;
 
     public partial class DataContext : DbContext
     {
@@ -50,22 +51,6 @@
                 .HasMany(e => e.People_Organizayson)
                 .WithRequired(e => e.Organizasyon)
                 .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<People>()
-                .Property(e => e.Name)
-                .IsFixedLength();
-
-            modelBuilder.Entity<People>()
-                .Property(e => e.Surname)
-                .IsFixedLength();
-
-            modelBuilder.Entity<People>()
-                .Property(e => e.Email)
-                .IsFixedLength();
-
-            modelBuilder.Entity<People>()
-                .Property(e => e.Password)
-                .IsFixedLength();
 
             modelBuilder.Entity<People>()
                 .HasMany(e => e.Comment)

@@ -1,0 +1,39 @@
+﻿@using OrganizatorUI.Models
+@model List<Comment_Model>
+
+
+<div class="testimonials-container">
+    <div class="swiper-container testimonials-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="testimonial-content-wrap flex flex-wrap align-items-stretch">
+                    @foreach (var item in Model)
+                    {
+
+                        <figure class="user-avatar">
+                            <img src="~/Content/images/testimonial-user.jpg" alt="">
+                        </figure><!-- .user-thumbnail -->
+                        <div class="testimonial-content">
+                            <header class="entry-header">
+                                <h2 class="entry-title">We love sunfest</h2>
+                            </header><!-- .entry-header -->
+                            <div class="entry-content">
+                                <p>@item.Comment.Comment_detail</p>
+                            </div><!-- .entry-content -->
+                            <footer class="entry-footer">
+                                <a href="#">@item.Comment.People.Name</a>
+                            </footer><!-- .entry-footer -->
+                        </div><!-- .testimonial-content -->
+                    }
+                </div><!-- .testimonial-content-wrap -->
+            </div><!-- .swiper-slide -->
+
+
+        </div><!-- .swiper-wrapper -->
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div><!-- .swiper-container -->
+    <div class="swiper-button-next">
+        <img src="~/Content/images/button.png" alt="">
+    </div><!-- .slider-button -->
+</div>

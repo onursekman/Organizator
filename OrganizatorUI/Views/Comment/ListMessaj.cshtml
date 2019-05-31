@@ -6,6 +6,7 @@
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
     People people = Session["People"] as People;
     List<Message> msj = MessageBLL.gelenMessage(people.ID);
+    
 }
 
 
@@ -33,7 +34,7 @@
                 <div class="lineup-artists">
                     @foreach (var item in msj)
                     {
-
+                        People po = PeopleBLL.GetPeople1(item.SenderID);
                     <form action="/Contact/ReplyMessage/@item.SenderID" method="get">
                         <div class="lineup-artists-wrap flex flex-wrap">
                             <figure class="featured-image">
@@ -42,7 +43,7 @@
                             <div class="lineup-artists-description">
                                 <div class="lineup-artists-description-container">
                                     <div class="entry-title">
-                                        @item.People.Name
+                                        @po.Name
                                     </div><!-- entry-title -->
                                     <div class="entry-content">
                                         <p>@item.Message_Detail</p>

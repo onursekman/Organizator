@@ -1,4 +1,5 @@
-﻿using OrganizatorENTİTY;
+﻿using OrganizatorDAL;
+using OrganizatorENTİTY;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,16 +12,12 @@ namespace OrganizatorBLL
     {
 
         static DataContext datacontext = new DataContext();
-
-        public static int CommentId()
-        {
-         int commentId=datacontext.Comment.Max(x => x.ID);
-            return commentId;
-        }
-        public static void InsertComment(Comment co)
+        
+        public static int InsertComment(Comment co)
         {
             datacontext.Comment.Add(co);
             datacontext.SaveChanges();
+            return co.ID;
         }
 
 

@@ -43,8 +43,4 @@ C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\De
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csproj.CopyComplete
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.dll
 C:\Users\sekma\OneDrive\Masaüstü\Organizator\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.pdb
-C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorDAL.dll.config
-C:\WORK\Organizator\OrganizatorBLL\bin\Debug\OrganizatorENTİTY.dll.config
-C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csprojAssemblyReference.cache
-C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csproj.CoreCompileInputs.cache
-C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csproj.CopyComplete
+C:\WORK\Organizator\OrganizatorBLL\obj\Debug\OrganizatorBLL.csprojResolveAssemblyReference.cache

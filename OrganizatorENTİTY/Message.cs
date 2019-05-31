@@ -9,7 +9,6 @@ namespace OrganizatorENTİTY
     [Table("Message")]
     public partial class Message
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int ID { get; set; }
 
         public int ReceiverID { get; set; }

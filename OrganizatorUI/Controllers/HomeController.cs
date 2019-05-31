@@ -18,14 +18,17 @@ namespace OrganizatorUI.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Login(string email,string password)
+        public ActionResult Login(string email, string password)
         {
-            People people= LoginBLL.Login(email);
-            if (people.Password.Trim() == password.Trim())
-            {
+            People people = LoginBLL.Login(email);
 
-                Session["People"] = people;
-                return RedirectToAction("Index");
+            if (people != null)
+            {
+                if (people.Password == password)
+                {
+                    Session["People"] = people;
+                    return RedirectToAction("Index");
+                }
             }
 
 
